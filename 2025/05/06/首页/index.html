@@ -19,17 +19,17 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="禹脉本草 | 千年药都·年轻表达              :root {             --primary-color: #6B8E23;  &#x2F;* 药材绿 *&#x2F;             --secondary-color: #4B5D7A; &#x2F;* 钧瓷靛蓝 *&#x2F;             --accent-color: #D4AF37;    &#x2F;* 烫金">
+    <meta name="description" content="禹脉本草 - 中医药文化创意品牌              &#x2F;* 基础样式 *&#x2F;         * {             margin: 0;             padding: 0;             box-sizing: border-box;             font-family: &#39;Segoe UI&#39;, Arial, san">
 <meta property="og:type" content="article">
 <meta property="og:title" content="首页">
 <meta property="og:url" content="http://example.com/2025/05/06/%E9%A6%96%E9%A1%B5/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="禹脉本草 | 千年药都·年轻表达              :root {             --primary-color: #6B8E23;  &#x2F;* 药材绿 *&#x2F;             --secondary-color: #4B5D7A; &#x2F;* 钧瓷靛蓝 *&#x2F;             --accent-color: #D4AF37;    &#x2F;* 烫金">
+<meta property="og:description" content="禹脉本草 - 中医药文化创意品牌              &#x2F;* 基础样式 *&#x2F;         * {             margin: 0;             padding: 0;             box-sizing: border-box;             font-family: &#39;Segoe UI&#39;, Arial, san">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2025/05/06/%E9%A6%96%E9%A1%B5/blind-box.jpg">
-<meta property="og:image" content="http://example.com/2025/05/06/%E9%A6%96%E9%A1%B5/$%7Bproduct.image%7D">
+<meta property="og:image" content="http://example.com/2025/05/06/%E9%A6%96%E9%A1%B5/news1.jpg">
 <meta property="article:published_time" content="2025-05-06T10:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-06T16:29:34.296Z">
+<meta property="article:modified_time" content="2025-05-06T16:49:44.027Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2025/05/06/%E9%A6%96%E9%A1%B5/blind-box.jpg">
@@ -225,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          385 字
+          391 字
         
       </span>
     
@@ -283,16 +283,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>禹脉本草 | 千年药都·年轻表达</title>
+    <title>禹脉本草 - 中医药文化创意品牌</title>
     <style>
-        :root {
-            --primary-color: #6B8E23;  /* 药材绿 */
-            --secondary-color: #4B5D7A; /* 钧瓷靛蓝 */
-            --accent-color: #D4AF37;    /* 烫金色 */
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
         }
-        /* 响应式导航栏 */
+        body {
+            background-color: #f5f5f5;
+        }
+        /* 导航栏 */
         .navbar {
-            background: var(--secondary-color);
+            background-color: #2d5f2e;
             padding: 1rem;
             position: fixed;
             width: 100%;
@@ -301,44 +306,48 @@
         }
         .nav-links {
             display: flex;
-            justify-content: space-around;
-            list-style: none;
+            justify-content: center;
+            gap: 2rem;
         }
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-family: '方正清刻本悦宋', serif;
-            padding: 0.5rem 1rem;
+            font-weight: 500;
             transition: all 0.3s;
         }
         .nav-links a:hover {
-            background: var(--primary-color);
-            border-radius: 4px;
+            text-decoration: underline;
         }
-        /* 动态Banner */
+        /* 横幅图 */
         .banner {
-            height: 80vh;
             margin-top: 60px;
+            height: 400px;
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                        url('herbal-bg.jpg') center/cover;
+                        url('banner-bg.jpg') center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
-            animation: bannerSlide 15s infinite;
+            color: white;
+            text-align: center;
         }
-        @keyframes bannerSlide {
-            0%, 100% { background-position: center; }
-            50% { background-position: bottom right; }
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        /* 产品网格布局 */
+        /* 产品展示 */
+        .products {
+            padding: 3rem 10%;
+            background-color: #fff;
+        }
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            padding: 2rem;
+            margin-top: 2rem;
         }
         .product-card {
-            border: 1px solid var(--primary-color);
+            border: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
             transition: transform 0.3s;
@@ -346,103 +355,115 @@
         .product-card:hover {
             transform: translateY(-5px);
         }
-        /* AR体验区块 */
-        .ar-section {
-            background: var(--secondary-color);
-            color: white;
-            padding: 2rem;
-            text-align: center;
+        .product-image {
+            height: 200px;
+            background-color: #eee;
+            overflow: hidden;
         }
-        .ar-button {
-            background: var(--accent-color);
-            padding: 1rem 2rem;
-            border-radius: 25px;
-            cursor: pointer;
+        .product-info {
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+        }
+        /* 新闻动态 */
+        .news {
+            padding: 3rem 10%;
+        }
+        .news-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        /* 页脚 */
+        footer {
+            background-color: #2d5f2e;
+            color: white;
+            padding: 3rem 10%;
+            margin-top: 3rem;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
         }
     </style>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
-    <!-- 顶部导航栏 -->
     <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="#home">首页</a></li>
-            <li><a href="#products">产品中心</a></li>
-            <li><a href="#ar">AR体验</a></li>
-            <li><a href="#culture">文化故事</a></li>
-            <li><a href="#contact">联系我们</a></li>
-            <li><a href="#cart">🛒</a></li>
-        </ul>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于我们</a>
+            <a href="#products">产品系列</a>
+            <a href="#news">新闻动态</a>
+            <a href="#contact">联系我们</a>
+        </div>
     </nav>
-    <!-- 动态Banner -->
     <section class="banner">
-        <div class="banner-content">
-            <h1 style="color: white; font-size: 2.5rem;">让千年本草，走进你的生活</h1>
-            <button class="cta-button">立即探索 →</button>
+        <div>
+            <h1>禹脉本草</h1>
+            <p>传承千年药都文化 · 创新中医药文创体验</p>
         </div>
     </section>
-    <!-- 核心产品展示 -->
-    <section class="product-grid" id="products">
-        <div class="product-card">
-            <img src="blind-box.jpg" srcset="/img/loading.gif" lazyload alt="药材盲盒" style="width:100%">
-            <div class="product-info">
-                <h3>药王盲盒系列</h3>
-                <p>预售转化率超15%</p>
-                <button class="buy-button">立即拼团</button>
+    <section class="products" id="products">
+        <h2>特色产品</h2>
+        <div class="product-grid">
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="blind-box.jpg" srcset="/img/loading.gif" lazyload alt="本草盲盒" style="width:100%">
+                </div>
+                <div class="product-info">
+                    <h3>本草盲盒系列</h3>
+                    <p>融合禹州道地药材与传统非遗技艺的文化潮玩</p>
+                </div>
+            </article>
+            <!-- 更多产品卡片... -->
+        </div>
+    </section>
+    <section class="news" id="news">
+        <h2>最新动态</h2>
+        <article class="news-item">
+            <div class="news-image">
+                <img src="news1.jpg" srcset="/img/loading.gif" lazyload alt="药王文化节" style="width:200px">
+            </div>
+            <div class="news-content">
+                <h3>首届禹州中医药文创设计大赛启动</h3>
+                <p>2024年6月 - 诚邀全国设计师参与...</p>
+            </div>
+        </article>
+        <!-- 更多新闻条目... -->
+    </section>
+    <footer id="contact">
+        <div class="footer-content">
+            <div>
+                <h3>联系我们</h3>
+                <p>地址：河南省禹州市中医药产业园</p>
+                <p>电话：0374-8888 8888</p>
+            </div>
+            <div>
+                <h3>关注我们</h3>
+                <p>微信公众号 | 抖音 | 微博</p>
             </div>
         </div>
-        <!-- 更多产品卡片... -->
-    </section>
-    <!-- AR体验区块 -->
-    <section class="ar-section" id="ar">
-        <h2>AR识药实验室</h2>
-        <div class="ar-button" onclick="startAR()">
-            点击开启AR扫描
-        </div>
-    </section>
-    <script>
-        // 动态加载产品数据
-        function loadProducts() {
-            fetch('/api/products')
-                .then(response => response.json())
-                .then(data => {
-                    const grid = document.querySelector('.product-grid');
-                    data.forEach(product => {
-                        grid.appendChild(createProductCard(product));
-                    });
-                });
-        }
-        function createProductCard(product) {
-            const card = document.createElement('div');
-            card.className = 'product-card';
-            card.innerHTML = `
-                <img src="${product.image}" srcset="/img/loading.gif" lazyload alt="${product.name}">
-                <h3>${product.name}</h3>
-                <p>${product.description}</p>
-                <span>¥${product.price}</span>
-            `;
-            return card;
-        }
-        // AR功能初始化
-        function startAR() {
-            if (navigator.xr) {
-                // XR设备支持代码
-            } else {
-                alert('请使用支持AR功能的移动设备访问');
-            }
-        }
-        // 页面加载完成后执行
-        window.addEventListener('load', () => {
-            loadProducts();
-            // 其他初始化代码...
-        });
-    </script>
-
-
-
+    </footer>
 
 
 
