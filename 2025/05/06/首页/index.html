@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://example.com/2025/05/06/%E9%A6%96%E9%A1%B5/blind-box.jpg">
 <meta property="og:image" content="http://example.com/2025/05/06/%E9%A6%96%E9%A1%B5/news1.jpg">
 <meta property="article:published_time" content="2025-05-06T10:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-06T17:45:01.815Z">
+<meta property="article:modified_time" content="2025-05-06T17:59:00.600Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2025/05/06/images/a0c19c5c49394bccf523dd05a2b92c96.jpg">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          474 字
+          478 字
         
       </span>
     
@@ -298,11 +298,11 @@
         }
         .nav-container {
             display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-.brand {
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    .brand {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -323,12 +323,10 @@
         /* 导航栏 */
         .navbar {
             background-color: #2d5f2e;
-            padding: 1rem;
-            position: fixed;
             width: 100%;
             top: 0;
-            z-index: 1000;
-            padding: 0.8rem 2rem;
+            position: static !important; /* 取消父元素定位 */
+            z-index: auto !important;
         }
         .nav-links {
             display: flex;
